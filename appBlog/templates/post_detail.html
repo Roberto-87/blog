@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block content%}
+
+<!-- <article>
+
+     <h1>{{post.title}}</h1>
+    <h5>{{post.date_post}}</h5>
+    <img src="{{post.image.url}}" class="col-md-6 col-md-6 float-md-end mb-3 ms-md-3" alt="">
+    <p>
+        {{post.description}}
+        
+    </p>
+</div> 
+
+</article> -->
+
+<body class="body_detail">
+    
+
+        
+<div>   
+    <section class="w-100 section">
+       <article class="container section__article">
+         <div class="row section__div"  >
+                                   
+              <p class="col-sm-12 col-md-12 col-lg-6 col-xl-6 section__p"> 
+              <h2>{{post.title}}</h2><br>
+              <h6>{{post.date_post}}</h6><br><br>
+              <img class="col-sm-12 col-md-12 col-lg-6 col-xl-6 section__img" src="{{post.image.url}}" alt="{{post.title}}">
+              <p>
+              {{post.description}}  
+            </p>  
+      
+         </div>           
+       </article>
+  </section>
+</body>
+  {% endblock %}

@@ -1,0 +1,86 @@
+*{
+    text-decoration: none !important;
+   
+
+}
+
+.body-home{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63, 110, 251, 0.764) 0%, rgb(30, 30, 28) 50%);
+}
+
+
+.post_p{
+    color:white;
+    display: flex;
+    justify-content: center; 
+    font-family: 'Mukta', sans-serif;
+}
+
+.h1_posts{
+    padding: 1%;
+    font-family: 'Nabla', cursive;
+    display: flex;
+    justify-content: center; 
+    font-size: 10vh;
+}
+
+
+.container_h1{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 0, 0.257)),
+    url('./images/66.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.post{
+    border: 1.5px solid rgba(125, 125, 125, 0.24) ; 
+    margin:2%;
+    margin-bottom: 2%;
+}
+
+.card{
+    margin: 1%;
+    background-color: grey !important;
+}
+
+.card:hover{
+    background-color: rgba(240, 248, 255, 0.202) !important;
+    transition: 1s;
+}
+
+.card-body{
+    width: 100% !important;
+
+}
+
+
+
+.post_p:active{
+    transform:scaleX(1.1);
+    transition: 1s;
+}
+
+
+.date{
+    color:rgba(212, 234, 253, 0.515)!important
+}
+
+.p_footer{
+    color: white!important
+}
+
+.footer{
+    display: flex !important;
+    justify-content: flex-end !important;
+   
+}
+
+/* post detail */
+
+.body_detail{
+    background-color: rgba(175, 170, 170, 0.485);
+}

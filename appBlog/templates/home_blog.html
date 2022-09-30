@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+
+{%block content%}
+<body class="body-home">
+    
+
+<section class="section_lista_posts container">
+<div class="container_h1 row">
+<h1 class="h1_posts">Posts</h1>
+</div>
+
+
+<div class="row">
+    {%for post in posts %}
+    <div class="col-sm-6 w-100">
+      <div class="card bg-dark d-flex justify-content-center ">
+        <div class="card-body ">
+            <a href="{% url 'posts' post.id %}"><h2 class="post_p"></h2>
+            <h3 class="card-title post_p">{{post.title}}</h3>
+            <p class="card-text post_p">{{post.description |truncatechars:55}}</p>
+            <p  class="date">{{post.date_post|date:'M d Y'}}</p>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+</a>
+  {% endfor %}
+
+<footer class="footer">
+    <p class="p_footer"> ©<i>2022</i>🛸 </p>
+</footer>
+
+
+</body>
+{%endblock%}
