@@ -1,6 +1,5 @@
 *{
     text-decoration: none !important;
-   
 
 }
 
@@ -23,8 +22,8 @@
     display: flex;
     justify-content: center; 
     font-size: 10vh;
+   
 }
-
 
 .container_h1{
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 0, 0.257)),
@@ -34,6 +33,8 @@
     justify-content: center;
     flex-direction: column;
     padding: 5%;
+    margin: 0;
+    padding-bottom: -4%;
 }
 
 .post{
@@ -44,16 +45,19 @@
 
 .card{
     margin: 1%;
-    background-color: grey !important;
+    background-color: rgba(128, 128, 128, 0.311) !important;
 }
 
 .card:hover{
     background-color: rgba(240, 248, 255, 0.202) !important;
-    transition: 1s;
+    
 }
 
-.card-body{
-    width: 100% !important;
+.card{
+    margin-left: 2%;
+    margin-right: 2%;
+
+ 
 
 }
 
@@ -79,8 +83,64 @@
    
 }
 
-/* post detail */
+    /*----------- animation h1 ----------- */
+
+
+  .letra_p {
+    animation-name: letra_p;
+    animation-duration: 2s;
+  }
+  @keyframes letra_p {
+    10% {transform: scaleX(1);}
+    50% {transform: scaleY(1.5);}
+
+  } 
+
+  .letra_o {
+    animation-name: letra_o;
+    animation-duration: 2s;
+  }
+
+  @keyframes letra_o {
+    10% {transform: scaleX(1);}
+    50% {transform: scaleY(1.5);}
+  }  
+  
+  .letra_s {
+    animation-name: letra_s;
+    animation-duration: 2s;
+  }
+
+  @keyframes letra_s {
+    10% {transform: scaleX(1);}
+    50% {transform: scaleY(1.5);}
+  }  
+
+  .letra_t {
+    animation-name: letra_t;
+    animation-duration: 2s;
+  }
+
+  @keyframes letra_t {
+    10% {transform: scaleX(1);}
+    50% {transform: scaleY(1.5)} 
+  }
+
+  .letra_s2 {
+    animation-name: letra_s2;
+    animation-duration: 2s
+}
+
+  @keyframes letra_s2 {
+    10% {transform: scaleX(1);}
+    50% {transform: scaleY(1.5)} 
+  }  
+
+    /* end animation h1 */
+
+  /* post detail */
 
 .body_detail{
     background-color: rgba(175, 170, 170, 0.485);
 }
+/* end post detail */
